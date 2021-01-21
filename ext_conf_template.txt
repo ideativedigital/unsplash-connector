@@ -1,0 +1,6 @@
+# cat=Backend; type=string; label=Unsplash access key
+unsplash_access_key = 
+
+# cat=Backend; type=string; label=Unsplash secret key
+unsplash_secret_key = 
+

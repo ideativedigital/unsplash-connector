@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2013-09-19T09:11:39Z"
+          product-name="intranet_package">
+        <header/>
+        <body>
+            <trans-unit id="button.add_media">
+                <source>Add media from Unsplash</source>
+            </trans-unit>
+            <trans-unit id="placeholder.search">
+                <source>Search...</source>
+            </trans-unit>
+            <trans-unit id="button.submit">
+                <source>Add selected media</source>
+            </trans-unit>
+            <trans-unit id="button.cancel">
+                <source>Cancel</source>
+            </trans-unit>
+            <trans-unit id="error.query_required">
+                <source>Please enter a search term.</source>
+            </trans-unit>
+            
+
+            <trans-unit id="filter.orientation.label">
+                <source>Orientation</source>
+            </trans-unit>
+            <trans-unit id="filter.orientation.I.any">
+                <source>Any</source>
+            </trans-unit>
+            <trans-unit id="filter.orientation.I.landscape">
+                <source>Landscape</source>
+            </trans-unit>
+            <trans-unit id="filter.orientation.I.portrait">
+                <source>Portrait</source>
+            </trans-unit>
+            <trans-unit id="filter.orientation.I.squarish">
+                <source>Squarish</source>
+            </trans-unit>
+
+            <trans-unit id="filter.color.label">
+                <source>Dominant color</source>
+            </trans-unit>
+            <trans-unit id="filter.color.I.any">
+                <source>Any</source>
+            </trans-unit>
+            <trans-unit id="filter.color.I.black_and_white">
+                <source>Black &amp; white</source>
+            </trans-unit>
+            <trans-unit id="filter.color.I.white">
+                <source>White</source>
+            </trans-unit>
+            <trans-unit id="filter.color.I.black">
+                <source>Black</source>
+            </trans-unit>
+            <trans-unit id="filter.color.I.blue">
+                <source>Blue</source>
+            </trans-unit>
+            <trans-unit id="filter.color.I.magenta">
+                <source>Magenta</source>
+            </trans-unit>
+            <trans-unit id="filter.color.I.green">
+                <source>Green</source>
+            </trans-unit>
+            <trans-unit id="filter.color.I.orange">
+                <source>Orange</source>
+            </trans-unit>
+            <trans-unit id="filter.color.I.purple">
+                <source>Purple</source>
+            </trans-unit>
+            <trans-unit id="filter.color.I.red">
+                <source>Red</source>
+            </trans-unit>
+            <trans-unit id="filter.color.I.teal">
+                <source>Teal</source>
+            </trans-unit>
+            <trans-unit id="filter.color.I.yellow">
+                <source>Yellow</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
