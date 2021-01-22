@@ -26,7 +26,7 @@
 		}
 	},
 	"homepage": "https://github.com/ideativedigital/unsplash-connector",
-	"license": "GNU-3.0+",
+	"license": "GPL-3.0+",
 	"support": {
 		"issues": "https://github.com/ideativedigital/unsplash-connector"
 	}
