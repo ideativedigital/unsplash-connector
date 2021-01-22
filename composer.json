@@ -1,5 +1,5 @@
 {
-	"name": "ideativedigital/unsplash-connector",
+	"name": "ideative/unsplash-connector",
 	"version": "10.0.0",
 	"type": "typo3-cms-extension",
 	"description": "Plugin for extension id_stock_pictures that connects the Unsplash API to the TYPO3 backend",
@@ -18,7 +18,7 @@
 	],
 	"require": {
 		"typo3/cms-core": "^10.4",
-		"ideativedigital/stock-pictures": "^10"
+		"ideative/stock-pictures": "^10"
 	},
 	"extra": {
 		"typo3/cms": {
