@@ -1,5 +1,5 @@
 vendor/
-public/
+/public/
 composer.lock
 package-lock.json
 node_modules/
