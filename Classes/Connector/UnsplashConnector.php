@@ -3,16 +3,13 @@
 namespace Ideative\IdUnsplashConnector\Connector;
 
 use GuzzleHttp\Client;
-use GuzzleHttp\Exception\ClientException;
 use Ideative\IdStockPictures\ConnectorInterface;
 use Ideative\IdStockPictures\Domain\Model\SearchResult;
 use Ideative\IdStockPictures\Domain\Model\SearchResultItem;
 use Psr\Log\LoggerAwareInterface;
 use Psr\Log\LoggerAwareTrait;
-use TYPO3\CMS\Backend\Routing\UriBuilder;
 use TYPO3\CMS\Core\Configuration\ExtensionConfiguration;
 use TYPO3\CMS\Core\Log\LogManager;
-use TYPO3\CMS\Core\Resource\Folder;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Utility\LocalizationUtility;
 
@@ -23,12 +20,12 @@ class UnsplashConnector implements ConnectorInterface, LoggerAwareInterface
     /**
      * URL of the Unsplash Search API
      */
-    const SEARCH_ENDPOINT = 'https://api.unsplash.com/search/photos';
+    protected const SEARCH_ENDPOINT = 'https://api.unsplash.com/search/photos';
 
     /**
      * URL of the photo detail in Unsplash API
      */
-    const DETAIL_ENDPOINT = 'https://api.unsplash.com/photos';
+    protected const DETAIL_ENDPOINT = 'https://api.unsplash.com/photos';
 
     /**
      * @var array
@@ -79,7 +76,7 @@ class UnsplashConnector implements ConnectorInterface, LoggerAwareInterface
      * @return SearchResult
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
-    public function search(array $params)
+    public function search(array $params): SearchResult
     {
         /** @var SearchResult $result */
         $result = GeneralUtility::makeInstance(SearchResult::class);
@@ -88,7 +85,7 @@ class UnsplashConnector implements ConnectorInterface, LoggerAwareInterface
         $params['per_page'] = 50;
         $params['query'] = $params['q'];
 
-        
+
         $params['client_id'] = $this->extensionConfiguration['unsplash_access_key'];
 
         unset($params['q']);
@@ -133,7 +130,7 @@ class UnsplashConnector implements ConnectorInterface, LoggerAwareInterface
     {
         /** @var SearchResult $result */
         $result = GeneralUtility::makeInstance(SearchResult::class);
-        
+
         $result->search = $params;
         $result->totalCount = $rawData->total;
 
@@ -150,7 +147,7 @@ class UnsplashConnector implements ConnectorInterface, LoggerAwareInterface
      * Returns the label of the "Add media" button
      * @return string|null
      */
-    public function getAddButtonLabel()
+    public function getAddButtonLabel(): ?string
     {
         return LocalizationUtility::translate('button.add_media', 'id_unsplash_connector');
     }
