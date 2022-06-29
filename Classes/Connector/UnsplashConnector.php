@@ -79,7 +79,7 @@ class UnsplashConnector implements ConnectorInterface, LoggerAwareInterface
      * @return SearchResult
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
-    public function search(array $params)
+    public function search(array $params): SearchResult
     {
         /** @var SearchResult $result */
         $result = GeneralUtility::makeInstance(SearchResult::class);
@@ -150,7 +150,7 @@ class UnsplashConnector implements ConnectorInterface, LoggerAwareInterface
      * Returns the label of the "Add media" button
      * @return string|null
      */
-    public function getAddButtonLabel()
+    public function getAddButtonLabel(): ?string
     {
         return LocalizationUtility::translate('button.add_media', 'id_unsplash_connector');
     }
