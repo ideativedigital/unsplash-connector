@@ -16,7 +16,7 @@
 		}
 	],
 	"require": {
-		"../vendor/typo3/cms-core": "^12",
+		"typo3/cms-core": "^12",
 		"ideative/stock-pictures": "^12"
 	},
 	"extra": {
