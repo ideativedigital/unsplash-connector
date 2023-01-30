@@ -9,6 +9,8 @@ use Ideative\IdStockPictures\Domain\Model\SearchResultItem;
 use Psr\Log\LoggerAwareInterface;
 use Psr\Log\LoggerAwareTrait;
 use TYPO3\CMS\Core\Configuration\ExtensionConfiguration;
+use TYPO3\CMS\Core\Imaging\Icon;
+use TYPO3\CMS\Core\Imaging\IconFactory;
 use TYPO3\CMS\Core\Log\LogManager;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Utility\LocalizationUtility;
@@ -32,9 +34,16 @@ class UnsplashConnector implements ConnectorInterface, LoggerAwareInterface
      */
     protected $extensionConfiguration;
 
+    /**
+     * @var IconFactory
+     */
+    protected $iconFactory;
+
     public function __construct()
     {
         $this->extensionConfiguration = GeneralUtility::makeInstance(ExtensionConfiguration::class)->get('id_unsplash_connector');
+        $this->iconFactory = GeneralUtility::makeInstance(IconFactory::class);
+
         $this->setLogger(GeneralUtility::makeInstance(LogManager::class)->getLogger(__CLASS__));
     }
 
@@ -247,11 +256,7 @@ class UnsplashConnector implements ConnectorInterface, LoggerAwareInterface
      */
     public function getAddButtonIcon(): string
     {
-        return '<span class="t3js-icon icon icon-size-small icon-state-default icon-actions-online-media-add" data-identifier="actions-unsplash-media-add">
-                <span class="icon-markup">
-                    <svg class="icon-color" role="img"><use xlink:href="/typo3/sysext/core/Resources/Public/Icons/T3Icons/sprites/actions.svg#actions-cloud" /></svg>
-                </span>
-            </span>';
+        return $this->iconFactory->getIcon('actions-online-media-add', Icon::SIZE_SMALL)->render();
     }
 
     /**
