@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
     <file source-language="en" datatype="plaintext" original="messages" date="2013-09-19T09:11:39Z"
-          product-name="intranet_package">
+          product-name="unsplash-connector">
         <header/>
         <body>
             <trans-unit id="button.add_media">
@@ -19,7 +19,7 @@
             <trans-unit id="error.query_required">
                 <source>Please enter a search term.</source>
             </trans-unit>
-            
+
 
             <trans-unit id="filter.orientation.label">
                 <source>Orientation</source>
