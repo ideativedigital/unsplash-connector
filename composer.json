@@ -1,33 +1,20 @@
 {
-	"name": "ideative/unsplash-connector",
+	"name": "typo3/dap-unsplash",
 	"version": "14.0.0",
 	"type": "typo3-cms-extension",
 	"description": "Plugin for extension stock-pictures that connects the Unsplash API to the TYPO3 backend",
 	"autoload": {
 		"psr-4": {
-			"Ideative\\IdUnsplashConnector\\": "Classes"
+			"TYPO3\\CMS\\DAP\\Unsplash\\": "Classes"
 		}
 	},
-	"authors": [
-		{
-			"name": "Ideative",
-			"email": "typo3@ideative.ch",
-			"role": "Developer",
-			"homepage": "https://www.ideative.ch"
-		}
-	],
 	"require": {
-		"typo3/cms-core": "^14",
-		"ideative/stock-pictures": "^14"
+		"typo3/cms-filelist": "^14.0"
 	},
 	"extra": {
 		"typo3/cms": {
-			"extension-key": "unsplash-connector"
+			"extension-key": "dap-unsplash"
 		}
 	},
-	"homepage": "https://github.com/ideativedigital/unsplash-connector",
-	"license": "GPL-3.0+",
-	"support": {
-		"issues": "https://github.com/ideativedigital/unsplash-connector"
-	}
+	"license": "GPL-3.0+"
 }

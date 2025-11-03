@@ -1,14 +1,14 @@
-# Idéative Stock Pictures - Unsplash connector
-This extension allows backend users to search for images through [Unsplash](https://unsplash.com/), directly from the TYPO3 backend.
+# Digital Asset Provider - Unsplash provider
+This extension allows backend users to search for images through [Unsplash](https://www.unsplash.com/), directly from the TYPO3 backend.
 
-It adds a new "Add media from Unsplash" button in Media fields. Images can then be searched using keywords and various filters.
+Images can then be searched using keywords and various filters.
 
 ### Installation
-```composer require ideative/unsplash-connector```
+```composer require typo3/dap-unsplash```
 
 or download it from the [TYPO3 Extension Repository](https://extensions.typo3.org/) and activate the extension in the Extension Manager of your TYPO3 installation.
 
 ### Configuration
-Enter your Unsplash access key and secret key in the extension configuration.
+Enter your Unsplash consumer key, consumer secret and token in the extension configuration.
 
-Those credentials can be found at https://unsplash.com/oauth/applications once you've created you're logged into [Unsplash Developer platform](https://unsplash.com/developers) and created your app.
+Those credentials can be found at https://www.unsplash.com/account/developers/apps once you've created you're logged into [Unsplash Developer platform](https://www.unsplash.com/developers/) and created your app.

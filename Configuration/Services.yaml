@@ -4,5 +4,5 @@ services:
         autoconfigure: true
         public: true
 
-    Ideative\IdUnsplashConnector\:
+    TYPO3\CMS\DAP\Unsplash\:
         resource: '../Classes/*'

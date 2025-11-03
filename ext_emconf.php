@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the "Ideative Favicons" Extension for TYPO3 CMS.
+ * This file is part of TYPO3 CMS.
  *
  *  (c) 2019 Idéative <typo3@ideative.ch>
  *
@@ -22,8 +22,8 @@
  */
 
 $EM_CONF[$_EXTKEY] = [
-    'title' => 'Stock Pictures library - Unsplash connector',
-    'description' => 'Plugin for extension stock-pictures that connects the Unsplash API to the TYPO3 backend',
+    'title' => 'Digital Asset Provider - Unsplash',
+    'description' => 'Plugin that connects the Unsplash API to the TYPO3 backend',
     'category' => 'templates',
     'author' => 'Ideative',
     'author_email' => 'typo3@ideative.ch',
@@ -41,8 +41,7 @@ $EM_CONF[$_EXTKEY] = [
     'version' => '14.0.0',
     'constraints' => [
         'depends' => [
-            'typo3' => '14.0.0-14.9.99',
-            'stock-pictures' => '14.0.0-14.9.99'
+            'typo3' => '14.0.0-14.9.99'
         ],
         'conflicts' => [
         ],
